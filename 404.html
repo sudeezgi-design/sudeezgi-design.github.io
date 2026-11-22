@@ -5,17 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>404 — Sude Ezgi</title>
 <meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
 <meta name="theme-color" content="#f9f9f8">
 <script>(function(){var r=document.documentElement;try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light')t=(matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';r.setAttribute('data-theme',t);var l=localStorage.getItem('lang');if(l!=='tr'&&l!=='en')l=((navigator.language||'en').toLowerCase().indexOf('tr')===0)?'tr':'en';r.lang=l;}catch(e){}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500..800&family=DM+Sans:opsz,wght@9..40,400..600&display=swap" rel="stylesheet">
 <style>
 :root{--surface:#f9f9f8;--card:#ffffff;--ink:#1a1c1c;--muted:#45464d;--line:rgba(15,23,42,.1);--accent:#4648d4;--btn:#000;--btn-ink:#fff}
 html[data-theme="dark"]{--surface:#0e1016;--card:#151925;--ink:#e8eaf0;--muted:#a9afbf;--line:rgba(232,234,240,.12);--accent:#9b9dff;--btn:#f1f2f7;--btn-ink:#0e1016;color-scheme:dark}
 *{box-sizing:border-box;margin:0}
 html{background:var(--surface)}
-body{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;background:var(--surface);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;position:relative;overflow-x:hidden;isolation:isolate}
+body{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;background:var(--surface);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;position:relative;overflow-x:hidden;isolation:isolate}
 .blobs{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
 .blobs i{position:absolute;border-radius:50%}
 .blobs i:nth-child(1){width:460px;height:460px;right:-110px;top:-90px;background:radial-gradient(circle,rgba(139,92,246,.30),transparent 70%);animation:a 16s ease-in-out infinite alternate}
@@ -24,15 +26,15 @@ body{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;backg
 @keyframes b{to{transform:translate3d(70px,-40px,0) scale(.92)}}
 header{padding:1.5rem clamp(1.25rem,5vw,4rem)}
 .logo{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ink)}
-.logo b{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:600;letter-spacing:-.02em}
+.logo b{font-family:'Manrope',system-ui,sans-serif;font-size:1.35rem;font-weight:800;letter-spacing:-.035em}
 .logo b span{background:linear-gradient(135deg,#8B5CF6,#6366F1);-webkit-background-clip:text;background-clip:text;color:transparent}
 main{flex:1;display:flex;align-items:center;justify-content:center;padding:2rem clamp(1.25rem,5vw,4rem) 4rem;text-align:center}
 .box{max-width:36rem;animation:in .9s cubic-bezier(.2,.7,.2,1) both}
 @keyframes in{from{opacity:0;translate:0 24px}to{opacity:1;translate:0 0}}
-.code{font-family:'JetBrains Mono',monospace;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
-h1{font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(5.5rem,22vw,10rem);line-height:1;letter-spacing:-.04em;margin:.6rem 0 .4rem}
+.code{font-family:'DM Sans',system-ui,sans-serif;font-weight:600;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:'Manrope',system-ui,sans-serif;font-weight:800;font-size:clamp(5rem,20vw,9rem);line-height:1;letter-spacing:-.05em;margin:.6rem 0 .4rem}
 h1 i{font-style:normal;background:linear-gradient(135deg,#8B5CF6,#6366F1);-webkit-background-clip:text;background-clip:text;color:transparent}
-h2{font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(1.5rem,4vw,2rem);letter-spacing:-.02em;margin-bottom:.8rem}
+h2{font-family:'Manrope',system-ui,sans-serif;font-weight:700;font-size:clamp(1.45rem,4vw,1.9rem);letter-spacing:-.03em;margin-bottom:.8rem;text-wrap:balance}
 p{color:var(--muted);font-size:1.05rem}
 .btns{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-top:2rem}
 .btn{display:inline-flex;align-items:center;justify-content:center;padding:.8rem 1.6rem;border-radius:9999px;font-weight:500;font-size:.95rem;text-decoration:none;transition:transform .2s,background-color .2s,border-color .2s,color .2s,box-shadow .2s}
@@ -41,7 +43,7 @@ p{color:var(--muted);font-size:1.05rem}
 .btn.sec{border:1px solid var(--line);color:var(--ink);background:var(--card)}
 .btn.sec:hover{border-color:var(--accent);color:var(--accent);background:rgba(99,102,241,.08)}
 a:focus-visible{outline:2px solid #6366F1;outline-offset:3px}
-footer{padding:1.5rem clamp(1.25rem,5vw,4rem);text-align:center;font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--muted)}
+footer{padding:1.5rem clamp(1.25rem,5vw,4rem);text-align:center;font-size:.8rem;color:var(--muted)}
 html:not([lang="en"]) .en{display:none}
 html[lang="en"] .tr{display:none}
 @media (prefers-reduced-motion:reduce){.box,.blobs i{animation:none}}
